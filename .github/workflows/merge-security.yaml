@@ -32,6 +32,12 @@ jobs:
     secrets:
       NEXUS_IQ_PASSWORD: ${{ secrets.NEXUS_IQ_PASSWORD }}
 
+  reuse-sonarcube-cloud:
+    # yamllint disable-line rule:line-length
+    uses: os-climate/osc-github-devops/.github/workflows/reuse-sonarqube-cloud.yaml@main # 2025-02-03
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
   analysis:
     name: Analysis
     runs-on: ubuntu-24.04

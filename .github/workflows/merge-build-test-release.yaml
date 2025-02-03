@@ -218,4 +218,4 @@ jobs:
           project_name: ${{ env.python_project_name }}
           artefact_location: "dist"
           tag: ${{ needs.repository.outputs.build_tag }}
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
